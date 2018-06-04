@@ -1,4 +1,4 @@
-FROM clojure:lein-2.7.1
+FROM clojure:lein-2.8.1
 MAINTAINER Democracy Works, Inc. <dev@democracy.works>
 
 RUN groupadd --gid 1000 node \
