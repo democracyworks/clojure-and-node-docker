@@ -1,5 +1,7 @@
 FROM clojure:lein-2.8.1
-MAINTAINER Democracy Works, Inc. <dev@democracy.works>
+LABEL maintainer="Democracy Works, Inc. <dev@democracy.works>"
+
+RUN apt-get update && apt-get upgrade -y
 
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
